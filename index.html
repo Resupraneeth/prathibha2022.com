@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta name="theme-color" content="#9d4edd">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@500&display=swap" rel="stylesheet">
+        <title>Site</title>
+        <style>
+            body{
+                background-image: url("images/IMG_5555-01.jpeg");
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100% 150%;
+            }
+            h5{
+                margin-top: 100px;
+                font-family: 'Archivo Black', sans-serif;
+                font-size: 3em;
+                margin-top: 1em;
+                text-align: center;
+                text-transform: uppercase;
+                color: #ff66ff;
+            }
+
+            .text{
+                color: thistle;
+                text-align: center;
+                font-family:  "Trirong";
+                font-size: 50px;
+                font-weight: bold;
+                text-shadow: 3px 3px 3px #aaaaaa;
+            }
+
+            #firstpara{
+                font-size: 50px;
+                text-transform: uppercase;
+            }
+            footer{
+                background-color: grey;
+                height: 140px;
+                padding-left: 10px;
+                padding-right: 10px;
+                border-radius: 10px;
+                margin-bottom: 50px;
+            }
+            #naturediscription{
+                font-size: 36px;;
+                color:plum;
+                margin-top: 1px;
+                background-color: powderblue;
+                padding-left: 20px;
+                margin-bottom: 100px;
+                margin-left: 550px;
+                border-radius: 10px;
+            }
+
+
+            .playdiv{
+                animation-name: playanimation;
+                animation-duration: 5s;
+                animation-fill-mode: backwards;
+                animation-play-state: paused;
+                animation-iteration-count: infinite;
+
+            }
+
+            @keyframes playanimation {
+                0%{
+                    float: left;
+                    margin-left: 20px;
+                    height: 200px;
+                    width: 200px;
+                    background-color: purple;
+                    font-size: 0px;
+                    box-shadow: 10px 10px 5px #3f3945; 
+                }
+                
+                100%{
+                    float: left;
+                    margin-left: 20px;
+                    font-size: 90px;
+                    background-color: palevioletred;
+                    height: 200px;
+                    width: 200px;
+                    border-radius: 100px;
+                    box-shadow: 10px 10px 5px #3f3945;
+                    padding-bottom: 10px;
+                }
+            
+            }
+            
+            
+            .playdiv:hover{
+                animation-fill-mode: forwards;
+                animation-play-state: running;
+            }
+
+            .playdiv p{
+                color: white;
+                text-align: center;
+                padding: 0px 30px 30px 30px;
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+            }
+
+            #middle{
+                text-align: center;
+                font-family:'Courier New', Courier, monospace;
+                font-weight: 100;
+            }
+
+            .middlepara{
+                text-indent: 50px;
+                margin-left: 50px;
+                margin-right: 50px;
+                text-shadow: 3px 3px 3px #aaaaaa;
+                font-size: 32px;
+                font-family: 'Courier New', Courier, monospace;
+            }
+
+            #meDiv{
+                background-color: greenyellow;
+                height: 50px;
+                width: 90%;
+                border-radius: 5px;
+                margin-left: 50px;
+                font-size: 30px;
+                padding-left: 50px;
+                padding-top: 10px;
+            }
+
+            #profileDiv{
+                margin-top: 50px;
+                background-color: pink;
+                height: 500px;
+                width: 90%;
+                border-radius: 50px;
+                margin-left: 50px;
+                font-size: 30px;
+                padding-left: 50px;
+                padding-top: 10px;
+                box-shadow: 10px 10px 5px teal;
+
+            }
+
+            #profileDiv img{
+                border: 2px solid grey;
+                padding: 5px;
+            }
+
+            #name{
+                text-align: center;
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-weight: 100;
+                color: white;
+            }
+
+            #bio{
+                background-color: lightyellow;
+                margin-left: 300px;
+                margin-right: 50px;
+                padding: 20px 20px 20px 20px;
+                border-radius: 20px;
+            }
+
+            #bio p{
+                font-family: "sofia";
+                font-weight: 500;
+                height: 200px;
+                overflow: scroll;
+                
+            }
+
+            #memories{
+                margin: 70px 70px 70px 70px;
+                border-radius: 50px;
+                background-color: #FFFC00;
+                border: 10px solid lightyellow;
+             
+            }
+
+            #memories h1{
+                padding-top: 50px;
+                text-align: center;
+                font-size: 40px;
+                font-family: 'Brush Script MT', cursive;
+                text-shadow: 3px 3px 3px #aaaaaa;
+
+            }
+            
+            #memories .card{
+                float: left;
+                margin: 30px 150px 30px 150px;
+            }
+
+            div.card{
+                width: 250px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                text-align: center;
+            }
+
+            div.carddate{
+                padding: 10px;
+            }
+
+            .carddate p{
+                color: pink;
+                font-family: 'Rokkitt', serif;
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+            #heart { 
+                position: relative; 
+                width: 1000px; 
+                height: 900px; 
+                margin: auto;
+            } 
+            
+            #heart:before, #heart:after { 
+                position: absolute; 
+                content: "";  
+                left: 500px; 
+                top: 0; 
+                width: 500px; 
+                height: 800px; 
+                background: red; 
+                border-radius: 500px 500px 0 0; 
+                transform: rotate(-45deg); 
+                transform-origin: 0 100%;
+                animation-name: leftanimation;
+                animation-iteration-count: infinite;
+                animation-duration: 5s;
+ 
+            } 
+            
+            #heart:after { 
+                left: 0; 
+                transform: rotate(45deg); 
+                transform-origin :100% 100%; 
+                animation-name: rightanimation;
+            }
+
+            @keyframes leftanimation {
+                0%{
+                    height: 800px;
+                    width: 500px;
+                }
+                50%{
+                    height: 600px;
+                    width: 400px;
+                }
+                100%{
+                    height: 800px;
+                    width: 500px;
+                }
+            }
+
+            @keyframes rightanimation {
+                0%{
+                    height: 800px;
+                    width: 500px;
+                }
+                50%{
+                    height: 600px;
+                    width: 400px;
+                    left: 100px;
+                }
+                100%{
+                    height: 800px;
+                    width: 500px;
+                }
+            }
+
+          #miss{
+              height: 100%;
+              width: 90%;
+              border-radius: 12px;
+              background-color: red;
+              animation-name: missanime;
+              animation-duration: 10s;
+              animation-iteration-count: infinite;
+              margin: auto;
+              text-align: center;
+              margin-top: 50px;
+              margin-bottom: 50px;
+              font-size: 90px;
+              color: #4885ed  ;
+              font-family: Georgia, 'Times New Roman', Times, serif;
+              box-shadow: 10px 10px 5px black;
+          }
+
+          @keyframes missanime {
+              0% {background-color: rgb(85, 207, 115);}
+              25% {background-color: pink;}
+              50% {background-color: rgb(61, 106, 156);}
+              100% {background-color: orchid;}
+          }
+
+          #slideview{
+              height: 500px;
+              width: 400px;
+              background-color: palegreen;
+              margin: auto; 
+              border-radius: 15px;
+              animation-name: slide;
+              animation-duration: 10s;
+              animation-iteration-count: infinite;
+          }
+
+          @keyframes slide {
+              0%{
+                  background-image: url("images/pic1.jpeg");
+                  background-size: 100% 100%;
+              }
+              12%{
+                    background-image: url("images/pic2.jpeg");
+                    background-size: 100% 100%;
+                }
+              25%{
+                  background-image: url("images/pic3.jpeg");
+                  background-size: 100% 100%;
+              }
+              50%{
+                  background-image: url("images/pic4.jpeg");
+                  background-size: 100% 100%;
+              }
+              75%{
+                  background-image: url("images/pic5.jpeg");
+                  background-size: 100% 100%;
+              }
+              100%{
+                  background-image: url("images/pic6.jpeg");
+                  background-size: 100% 100%;
+              }
+          }
+
+          #mandiPic{
+              height: 700px;
+              width: 600px;
+              margin: auto;
+              margin-top: 50px;
+              background-size: pink;
+              border-radius: 10px;
+              background-color: #4885ed;
+              box-shadow: 10px 10px 5px #090a09;
+              color: #f4c20d;
+              font-size: 100px;
+              text-align: center;
+              transition-duration: 3s;
+          }
+
+          #mandiPic:hover{
+              background-image: url("images/mandi.jpeg");
+              background-position: fixed;
+              background-size: 100% 100%;
+              border-radius: 150px;
+              font-size: 0px;
+          }
+
+
+
+      
+        </style>
+    </head>
+    <body>
+        <h1 class="text">My Baby</h1>
+        <p class="text" id="firstpara"> Thanks for visiting</p>
+<p class="text" id="firstpara"> WISH YOY HAPPY HAPPY BIRTHDAY BABY</P>
+        <div style="margin-bottom: 350px;">
+            <div class="playdiv"><p>H</p></div>
+            <div class="playdiv"><p>Y</p></div>
+            <div class="playdiv"><p>B</p></div>
+            <div class="playdiv"><p>D</p></div>
+            <div class="playdiv"><p>A</p></div>
+            <div class="playdiv"><p>Y</p></div>
+        </div>
+
+        <div style="margin-bottom: 350px;">
+            <div class="playdiv"><p>P</p></div>
+            <div class="playdiv"><p>R</p></div>
+            <div class="playdiv"><p>A</p></div>
+            <div class="playdiv"><p>B</p></div>
+            <div class="playdiv"><p>B</p></div>
+            <div class="playdiv"><p>A</p></div>
+        </div>
+
+
+        <h5>I Love you.</h5>
+
+
+        <h1 id="middle">SIRRA PRATHIBHA <span style="text-decoration: line-through;">PRANEETH</span></h1>
+
+        <div id="heart"></div>
+        
+        <div id="mandiPic">
+            KUKKA FACE .
+         <img style="border-radius: 20px; float:left;"  src="C:\Users\User\Desktop\images\KUKKA.JPG" height="450" width="550">
+        </div>
+        <div id="profileDiv">
+            <h2 id="name">RESU PRANEETH</h2>
+            <img style="border-radius: 20px; float:left;"  src="C:\Users\User\Desktop\images\sleeve.jpeg" height="300" width="250">
+            <div id="bio">
+                <p>
+                    Thanks for being with me. I love you so much. The journey so far is excellent and beautiful. I assure you this is a beginning. I wish I had met you earlier in my life.
+
+                    Sometimes I was rude to you. That was not because I had stopped loving you. I was rude to you because I was mad at you. No matter what, I would never leave you.
+                </p>
+            </div>
+        </div>
+
+
+        <div id="memories">
+            <h1> CHOTA-   -MEMORIES </h1>
+
+            <div class="card">
+                <img src="C:\Users\User\Desktop\images\AKKA HOME.jpg" alt="AKKA HOME" style="width:100%; height:50%">
+                <div class="carddate">
+                    <p>DEC 5TH, 2020</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="C:\Users\User\Desktop\images\F2.jpg" alt="F2 DRIVE-IN" style="width:100%">
+                <div class="carddate">
+                    <p>SEPT 9TH, 2021</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="C:\Users\User\Desktop\images\AKKA.jpg" alt="AKKA HOME" style="width:100%">
+                <div class="carddate">
+                    <p>DEC 5TH, 2020</p>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="C:\Users\User\Desktop\images\NAGAR.jpg" alt="AKKA HOME" style="width:100%">
+                <div class="carddate">
+                    <p>FEB 5TH, 2020</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div>
+            <p style="font-size: 50px;"> <br> CHINNA CHUDU Manam kalisindhi enthey manam pics degindhi enthey 8yrs lo manam mana love ni chupichukundhi enthey inka chala chudalli, chala cheyalli, nak nitho chala chala cheyalni undhi ra, nitho thirgalli, "LOVE NI SPREAD CEHAYLLI CHALA UNAYIII" </p></br>
+        </div>
+
+        <div id="miss">
+            <p>I GONNA MISS TO TODAY😢😢</p>
+        </div>
+          <img src="C:\Users\User\Desktop\images\last.jpg" " width="350" height="500"></img>
+         <div>
+          <p style="font-size: 50px;"> Last Year ni Birthday pic edhii oka Bday kuda kalisi lemu😪 </p>
+           </div>
+
+    </body>
+</html>
